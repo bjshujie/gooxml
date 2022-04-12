@@ -12,6 +12,7 @@ package wml
 import (
 	"encoding/xml"
 	"fmt"
+	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
 
 	"github.com/carmel/gooxml"
 )
@@ -24,6 +25,16 @@ type CT_TblGrid struct {
 
 func NewCT_TblGrid() *CT_TblGrid {
 	ret := &CT_TblGrid{}
+	return ret
+}
+
+func NewCT_TblGridWithFixedColCnt(columnCnt int, colWidth uint64) *CT_TblGrid {
+	ret := &CT_TblGrid{}
+	cols := make([]*CT_TblGridCol, columnCnt, columnCnt)
+	for i := 0; i < columnCnt; i++ {
+		cols[i] = &CT_TblGridCol{WAttr: &sharedTypes.ST_TwipsMeasure{ST_UnsignedDecimalNumber: &colWidth}}
+	}
+	ret.GridCol = cols
 	return ret
 }
 

@@ -33,6 +33,13 @@ func NewCT_Tbl() *CT_Tbl {
 	return ret
 }
 
+func NewCT_Tbl_With_Col_Cnt(columnCnt int, colWidth uint64) *CT_Tbl {
+	ret := &CT_Tbl{}
+	ret.TblPr = NewCT_TblPr()
+	ret.TblGrid = NewCT_TblGridWithFixedColCnt(columnCnt, colWidth)
+	return ret
+}
+
 func (m *CT_Tbl) MarshalXML(e *xml.Encoder, start xml.StartElement) error {
 	e.EncodeToken(start)
 	if m.EG_RangeMarkupElements != nil {

@@ -277,6 +277,17 @@ func (d *Document) AddTable() Table {
 	return Table{d, tbl}
 }
 
+// AddTableWithFixedColCnt adds a new table with fixed count column.
+func (d *Document) AddTableWithFixedColCnt(colCnt int, colWidth uint64) Table {
+	elts := wml.NewEG_BlockLevelElts()
+	d.x.Body.EG_BlockLevelElts = append(d.x.Body.EG_BlockLevelElts, elts)
+	c := wml.NewEG_ContentBlockContent()
+	elts.EG_ContentBlockContent = append(elts.EG_ContentBlockContent, c)
+	tbl := wml.NewCT_Tbl_With_Col_Cnt(colCnt, colWidth)
+	c.Tbl = append(c.Tbl, tbl)
+	return Table{d, tbl}
+}
+
 func (d *Document) InsertTableAfter(relativeTo Paragraph) Table {
 	return d.insertTable(relativeTo, false)
 }
