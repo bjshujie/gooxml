@@ -12,7 +12,7 @@ package chartDrawing
 import (
 	"encoding/xml"
 
-	"github.com/carmel/gooxml"
+	"github.com/bjshujie/gooxml"
 )
 
 type EG_Anchor struct {

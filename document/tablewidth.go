@@ -8,9 +8,9 @@
 package document
 
 import (
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/measurement"
-	"github.com/carmel/gooxml/schema/soo/wml"
+	"github.com/bjshujie/gooxml"
+	"github.com/bjshujie/gooxml/measurement"
+	"github.com/bjshujie/gooxml/schema/soo/wml"
 )
 
 // TableWidth controls width values in table settings.

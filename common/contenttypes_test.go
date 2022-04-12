@@ -13,9 +13,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/carmel/gooxml/common"
-	"github.com/carmel/gooxml/testhelper"
-	"github.com/carmel/gooxml/zippkg"
+	"github.com/bjshujie/gooxml/common"
+	"github.com/bjshujie/gooxml/testhelper"
+	"github.com/bjshujie/gooxml/zippkg"
 )
 
 func TestContentTypesUnmarshal(t *testing.T) {

@@ -8,11 +8,11 @@
 package chart
 
 import (
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/color"
-	"github.com/carmel/gooxml/drawing"
-	"github.com/carmel/gooxml/schema/soo/dml"
-	crt "github.com/carmel/gooxml/schema/soo/dml/chart"
+	"github.com/bjshujie/gooxml"
+	"github.com/bjshujie/gooxml/color"
+	"github.com/bjshujie/gooxml/drawing"
+	"github.com/bjshujie/gooxml/schema/soo/dml"
+	crt "github.com/bjshujie/gooxml/schema/soo/dml/chart"
 )
 
 // PieOfPieChart is a Pie chart with an extra Pie chart.

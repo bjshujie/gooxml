@@ -12,7 +12,7 @@ package pml
 import (
 	"encoding/xml"
 
-	"github.com/carmel/gooxml"
+	"github.com/bjshujie/gooxml"
 )
 
 type HandoutMaster struct {

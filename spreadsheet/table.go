@@ -7,7 +7,7 @@
 
 package spreadsheet
 
-import "github.com/carmel/gooxml/schema/soo/sml"
+import "github.com/bjshujie/gooxml/schema/soo/sml"
 
 type Table struct {
 	x *sml.Table

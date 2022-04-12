@@ -13,8 +13,8 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/ofc/math"
+	"github.com/bjshujie/gooxml"
+	"github.com/bjshujie/gooxml/schema/soo/ofc/math"
 )
 
 type CT_Body struct {

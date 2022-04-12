@@ -12,9 +12,9 @@ package wml
 import (
 	"encoding/xml"
 	"fmt"
-	"github.com/carmel/gooxml/schema/soo/ofc/sharedTypes"
+	"github.com/bjshujie/gooxml/schema/soo/ofc/sharedTypes"
 
-	"github.com/carmel/gooxml"
+	"github.com/bjshujie/gooxml"
 )
 
 type CT_TblGrid struct {

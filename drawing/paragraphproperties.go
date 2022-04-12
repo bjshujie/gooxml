@@ -8,8 +8,8 @@
 package drawing
 
 import (
-	"github.com/carmel/gooxml"
-	"github.com/carmel/gooxml/schema/soo/dml"
+	"github.com/bjshujie/gooxml"
+	"github.com/bjshujie/gooxml/schema/soo/dml"
 )
 
 // ParagraphProperties allows controlling paragraph properties.

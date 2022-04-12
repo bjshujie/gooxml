@@ -1,5 +1,5 @@
 #!/bin/bash
-PKG=github.com/carmel/gooxml
+PKG=github.com/bjshujie/gooxml
 ALLPKGS=`go list $PKG/... | grep -iv schema`
 
 cd $GOPATH/src/$PKG
